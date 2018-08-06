@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  web:
+    image: msdeploybot/silverstripe-web
+    working_dir: /var/www/public
+    volumes:
+      - ./:/var/www/public
+    ports:
+      - 8080:80
+    environment:
+      - IS_DOCKER=1
+
+  database:
+    image: mysql:5.6
+    volumes:
+      - db-data:/var/lib/mysql
+    restart: always
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - MYSQL_DATABASE=cths
+    ports:
+      - 13306:3306
+
+volumes:
+  db-data:
