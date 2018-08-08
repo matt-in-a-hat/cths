@@ -1,0 +1,69 @@
+
+.cths-header-title {
+    font-size: 2.5vw;
+}
+
+@media (max-width: 768px) {
+    .cths-header-title {
+        font-size: 1.2em;
+    }
+}
+
+.cths-featured-image {
+    border-radius: 1em;
+}
+
+@mixin coloured-panel($bgcolour, $textcolour: $text-black) {
+    background-color: $bgcolour;
+    color: $textcolour;
+}
+
+.cths-light-blue {
+    @include coloured-panel($light-blue);
+}
+.cths-dark-blue {
+    @include coloured-panel($dark-blue, $white);
+}
+.cths-orange {
+    @include coloured-panel($orange);
+}
+.cths-green {
+    @include coloured-panel($green);
+}
+
+.cths-button {
+    padding: .3em 1em;
+    display: inline-block;
+    border-radius: .5em;
+    margin-top: 1em;
+    background-color: $white;
+    color: $text-black;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+
+    &:hover, &focus {
+        box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.8);
+    }
+
+    &:active {
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6) inset;
+    }
+}
+
+.cths-with-button .cths-button {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
+.cths-box {
+    border-radius: 1em;
+    padding: 1.5rem;
+    color: $text-black;
+    margin-bottom: 1em;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.cths-with-button {
+    position: relative;
+    padding-bottom: 5em;
+}
