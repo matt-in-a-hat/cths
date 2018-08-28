@@ -6,3 +6,6 @@ SilverStripe\Core\Manifest\ModuleManifest:
 Silverstripe\SiteConfig\SiteConfig:
   extensions:
     - TinySiteConfig
+Page:
+  extensions:
+    - SilverStripe\Widgets\Extensions\WidgetPageExtension

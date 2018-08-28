@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container">
     <% if $SiteConfig.SiteLogo %>
-      <a class="navbar-brand" href="#">$SiteConfig.SiteLogo.ScaleMaxHeight(70)</a>
+      <a class="navbar-brand" href="/">$SiteConfig.SiteLogo.ScaleMaxHeight(70)</a>
     <% end_if %>
-    <a class="navbar-brand navbar-text cths-header-title" href="#">$SiteConfig.Title</a>
+    <a class="navbar-brand navbar-text cths-header-title heading mt-md-auto" href="/">$SiteConfig.Title</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fa fa-bars"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="nav-menu" role="navigation">
+    <div class="collapse navbar-collapse mt-auto" id="nav-menu" role="navigation">
       <ul class="navbar-nav ml-auto">
         <% loop $Menu(1) %>
           <li class="nav-item active $LinkingMode">

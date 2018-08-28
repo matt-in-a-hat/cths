@@ -1,7 +1,7 @@
-$light-blue: #72cee7;
-$dark-blue: #295d87;
-$orange: #faa825;
+$light-blue: lighten(#72cee7, 10);
+$dark-blue: lighten(#295d87, 10);
+$orange: lighten(#faa825, 10);
 $text-black: #333333;
-$green: #7ec348;
+$green: lighten(#7ec348, 10);
 $dark-grey: #54595f;
 $white: #fff;

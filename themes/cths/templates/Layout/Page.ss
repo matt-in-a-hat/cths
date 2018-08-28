@@ -1,10 +1,10 @@
-<div class="row">
+<div class="row mt-5">
     <div class="col-md-8">
         <h1>$Title</h1>
-        <div class="content">$Content</div>
+        <div class="content mt-3">$Content</div>
     </div>
-    <div class="col-md-8">
-        <% include $SideBar %>
+    <div class="col-md-4 mt-5">
+        <% include SideBar %>
     </div>
 </div>
 <div class="row">

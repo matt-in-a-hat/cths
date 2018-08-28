@@ -1,15 +1,5 @@
 
-.cths-header-title {
-    font-size: 2.5vw;
-}
-
-@media (max-width: 768px) {
-    .cths-header-title {
-        font-size: 1.2em;
-    }
-}
-
-.cths-featured-image {
+.cths-featured-image, .cths-featured-image img {
     border-radius: 1em;
 }
 
@@ -21,8 +11,24 @@
 .cths-light-blue {
     @include coloured-panel($light-blue);
 }
-.cths-dark-blue {
+.cths-featured-article {
     @include coloured-panel($dark-blue, $white);
+    position: relative;
+
+    a {
+        color: #fff;
+    }
+
+    &:before {
+        content: 'Featured';
+        font-size: .8em;
+        color: #cce0ef;
+        color: lighten($dark-blue, 50%);
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-style: italic;
+    }
 }
 .cths-orange {
     @include coloured-panel($orange);
@@ -30,8 +36,11 @@
 .cths-green {
     @include coloured-panel($green);
 }
+.cths-featured-blog:before {
+    content: 'Latest post';
+}
 
-.cths-button {
+.cths-button, a.cths-button {
     padding: .3em 1em;
     display: inline-block;
     border-radius: .5em;
@@ -40,8 +49,9 @@
     color: $text-black;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 
-    &:hover, &focus {
+    &:hover, &:focus {
         box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.8);
+        text-decoration: underline;
     }
 
     &:active {
@@ -61,6 +71,33 @@
     color: $text-black;
     margin-bottom: 1em;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+
+    a {
+        color: $text-black;
+        text-decoration: underline;
+
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        a {
+            text-decoration: none;
+
+            &:hover, &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .cths-button, a.cths-button {
+        text-decoration: none;
+
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
 }
 
 .cths-with-button {

@@ -1,0 +1,27 @@
+$footer-height: 100px;
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: $footer-height;
+}
+
+h1,h2,h3,h4,h5,h6,
+.heading {
+    font-family: Corben, sans-serif;
+    letter-spacing: 1px;
+}
+
+.cths-header-title {
+    font-size: 2.5vw;
+}
+
+@media (max-width: 768px) {
+    .cths-header-title {
+        font-size: 1.2em;
+    }
+}
