@@ -1,0 +1,39 @@
+TODO
+
+
+Style base page
+Add test blog posts & style holder/page
+Set up Mailchimp
+-- Add email signup form & to home page - set up DNS and replace with embedded form from mailchimp?
+Add contact form
+
+
+Confirm DigitalOcean pricing (on 1GB tier)
+Add about pages
+Ask committee for feedback and some content?
+
+Add knowledgebase landing page & content
+Hero image for home page, & other pages?, & use style for blog
+Add 2nd level header nav (e.g. about > us/th)
+Add footer w/ link to about t/c's
+
+
+Make homepage featured item(s?) editable in CMS (content from pages?)
+Make homepage boxes editable in CMS
+
+
+Streamline deployment? - https://circleci.com/pricing/
+
+
+
+
+
+
+
+https://getbootstrap.com/docs/4.1/layout/grid/
+
+
+
+
+
+

@@ -1,3 +1,8 @@
+AuthType Basic
+AuthName "Site Under Development"
+AuthUserFile "/var/www/public/.htpasswd"
+Require valid-user
+
 ### SILVERSTRIPE START ###
 
 # Deny access to templates (but allow from localhost)

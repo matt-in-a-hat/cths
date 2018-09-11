@@ -5,6 +5,9 @@
     </div>
     <div class="col-md-4 mt-5">
         <% include SideBar %>
+        <% if $Content %>
+            <% include EmailListSidebar %>
+        <% end_if %>
     </div>
 </div>
 <div class="row">

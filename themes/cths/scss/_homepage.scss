@@ -1,6 +1,6 @@
 
 .cths-featured-image, .cths-featured-image img {
-    border-radius: 1em;
+    border-radius: 1rem;
 }
 
 @mixin coloured-panel($bgcolour, $textcolour: $text-black) {
@@ -11,24 +11,29 @@
 .cths-light-blue {
     @include coloured-panel($light-blue);
 }
-.cths-featured-article {
+.cths-featured-article,
+.cths-highlight-row {
     @include coloured-panel($dark-blue, $white);
     position: relative;
 
     a {
         color: #fff;
-    }
 
-    &:before {
-        content: 'Featured';
-        font-size: .8em;
-        color: #cce0ef;
-        color: lighten($dark-blue, 50%);
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        font-style: italic;
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
     }
+}
+
+.cths-featured-article:before {
+    content: 'Featured';
+    font-size: .8rem;
+    color: #cce0ef;
+    color: lighten($dark-blue, 50%);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-style: italic;
 }
 .cths-orange {
     @include coloured-panel($orange);
@@ -41,10 +46,10 @@
 }
 
 .cths-button, a.cths-button {
-    padding: .3em 1em;
+    padding: .3rem 1rem;
     display: inline-block;
-    border-radius: .5em;
-    margin-top: 1em;
+    border-radius: .5rem;
+    margin-top: 1rem;
     background-color: $white;
     color: $text-black;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
@@ -61,15 +66,15 @@
 
 .cths-with-button .cths-button {
     position: absolute;
-    right: 1em;
-    bottom: 1em;
+    right: 1rem;
+    bottom: 1rem;
 }
 
 .cths-box {
-    border-radius: 1em;
+    border-radius: 1rem;
     padding: 1.5rem;
     color: $text-black;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 
     a {
@@ -102,5 +107,16 @@
 
 .cths-with-button {
     position: relative;
-    padding-bottom: 5em;
+    padding-bottom: 5rem;
+}
+
+.main-field label {
+    font-size: 1.2rem;
+    margin-left: 0.25rem;
+}
+.main-field input, textarea {
+    border-radius: 10px;
+    font-size: 1.6rem;
+    padding: 0.2rem 1rem;
+    width: 100%;
 }

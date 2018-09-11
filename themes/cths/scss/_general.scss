@@ -12,8 +12,9 @@ body {
 
 h1,h2,h3,h4,h5,h6,
 .heading {
-    font-family: Corben, sans-serif;
+    font-family: 'Roboto Slab', serif;
     letter-spacing: 1px;
+    font-weight: bold;
 }
 
 .cths-header-title {
@@ -22,6 +23,42 @@ h1,h2,h3,h4,h5,h6,
 
 @media (max-width: 768px) {
     .cths-header-title {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
+}
+
+.field.main-field {
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar a {
+    color: $text-grey;
+
+    &:hover {
+        color: $text-black;
+    }
+}
+
+.nav-item {
+    border-radius: 5px;
+}
+
+.nav-item:hover {
+    background: $dark-blue;
+}
+
+.nav-item a:hover {
+    color: #fff;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+#ForgotPassword {
+    margin: 10px 20px;
 }

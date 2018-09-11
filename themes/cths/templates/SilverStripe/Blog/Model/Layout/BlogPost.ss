@@ -45,6 +45,7 @@
     <% if $SideBarView %>
         <div class="sidebar col-md-4 mt-5">
             $SideBarView
+            <% include EmailListSidebar %>
         </div>
     <% end_if %>
 </div>

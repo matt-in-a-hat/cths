@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md bg-light">
   <div class="container">
     <% if $SiteConfig.SiteLogo %>
       <a class="navbar-brand" href="/">$SiteConfig.SiteLogo.ScaleMaxHeight(70)</a>
