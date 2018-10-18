@@ -2,24 +2,23 @@ TODO
 
 
 Style base page
-Add test blog posts & style holder/page
-Set up Mailchimp
--- Add email signup form & to home page - set up DNS and replace with embedded form from mailchimp?
-Add contact form
-
-
-Confirm DigitalOcean pricing (on 1GB tier)
-Add about pages
-Ask committee for feedback and some content?
-
-Add knowledgebase landing page & content
+Fix mailchimp reply to etc?
 Hero image for home page, & other pages?, & use style for blog
+
+Fix css for deployment?
+Add GA key
+Kill WP site on 000
+Could add a confirmation email on mailchimp signup which links them to the form (with payment info) for if they want to become a society member.
+https://mailchimp.com/help/add-or-remove-a-signup-form-on-your-facebook-page/?_ga=2.225365215.430009687.1536897623-898748327.1536897623
+
+Confirm pricing
+Add more info to about pages
+Ask committee for feedback and some content?
+Ask fb group for photos and content?
+
+Add to knowledgebase
 Add 2nd level header nav (e.g. about > us/th)
 Add footer w/ link to about t/c's
-
-
-Make homepage featured item(s?) editable in CMS (content from pages?)
-Make homepage boxes editable in CMS
 
 
 Streamline deployment? - https://circleci.com/pricing/

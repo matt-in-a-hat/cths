@@ -18,35 +18,52 @@
             </div>
         <% end_loop %>
     </div>
-    <div class="row cths-featured-article my-5 p-5">
-        <div class="col">
-            <div class="row mb-3">
-                <div class="col">
-                    <h3>A tiny house village in Christchurch’s red zone</h3>
+    <% if $FeaturedPage %>
+        <div class="row cths-featured-article my-5 p-5">
+            <div class="col">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h3>$FeaturedPage.Title</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-7">
-                    <p>We’re working with Regen Chch and CCC to propose a small village of tiny houses.</p>
-                    <p>This would allow us to showcase a sustainable urban community while utilising land not fit for traditional builds. Our proposal aims to</p>
-                    <ul>
-                        <li>Nurture the land and provide security to the neighbouring communities</li>
-                        <li>Provide a social hub for events and community driven initiatives</li>
-                        <li>Engage with council to provide a better understanding of Tiny Houses</li>
-                        <li>Create a framework to help with future Tiny House villages</li>
-                    </ul>
+                <div class="row">
+                    <% if $FeaturedPage.HeaderImage || $FeaturedPage.FeaturedImage %>
+                        <div class="col-lg-7">
+                            <% if $FeaturedPage.Summary %>
+                                $FeaturedPage.Summary
+                            <% else_if $GetWordCount($FeaturedPage.Content) < 100 %>
+                                $FeaturedPage.Content
+                            <% else %>
+                                <p>$FeaturedPage.Content.Summary(100)</p>
+                            <% end_if %>
+                        </div>
+                        <div class="col-lg-5 text-center cths-featured-image">
+                            <% if $FeaturedPage.HeaderImage %>
+                                $FeaturedPage.HeaderImage.FitMax(300, 300)
+                            <% else %>
+                                $FeaturedPage.FeaturedImage.FitMax(300, 300)
+                            <% end_if %>
+                        </div>
+                    <% else %>
+                        <div class="col-12">
+                            <% if $FeaturedPage.Summary %>
+                                $FeaturedPage.Summary
+                            <% else_if $GetWordCount($FeaturedPage.Content) < 100 %>
+                                $FeaturedPage.Content
+                            <% else %>
+                                <p>$FeaturedPage.Content.Summary(100)</p>
+                            <% end_if %>
+                        </div>
+                    <% end_if %>
                 </div>
-                <div class="col-lg-5 text-center">
-                    <img alt="Sketch of village of tiny houses" src="/images/JaredLane_reduced-300x212.jpg" class="cths-featured-image">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <a class="cths-button" href="#" title="Learn more about the village proposal">Read more</a>
+                <div class="row">
+                    <div class="col">
+                        <a class="cths-button" href="$FeaturedPage.Link" title="See this article in full">Read more</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    <% end_if %>
     <% if $GetActionBoxes.Count() > 3 %>
         <div class="row mb-5">
             <% loop $GetActionBoxes.limit(99, 3) %>
