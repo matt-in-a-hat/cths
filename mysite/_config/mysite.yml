@@ -9,3 +9,6 @@ Silverstripe\SiteConfig\SiteConfig:
 Page:
   extensions:
     - SilverStripe\Widgets\Extensions\WidgetPageExtension
+SilverStripe\Security\MemberAuthenticator\MemberLoginForm:
+  default_classes:
+    - 'security'

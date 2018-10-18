@@ -60,5 +60,15 @@ input[type="submit"] {
 }
 
 #ForgotPassword {
-    margin: 10px 20px;
+    margin: 2px 20px;
+}
+
+.security {
+    .middleColumn {
+        margin-bottom: 20px;
+    }
+
+    .btn-toolbar {
+        margin-top: 10px;
+    }
 }

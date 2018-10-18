@@ -4,34 +4,19 @@
         <h2 class="mb-5">Thanks for subscribing... we hope to see you at the next event!</h2>
     <% end_if %>
     <div class="row">
-        <div class="col-md-6 col-lg-4 d-flex">
-            <div class="cths-box cths-light-blue">
-                <h4>What is a Tiny House?</h4>
-                <div>
-                    Tiny Houses typically have all of the main amenities you use in a normal house, but in a space-efficient and cosy manner.
-                    Often they're movable e.g. built on a trailer.
+        <% loop $GetActionBoxes.limit(3, 0) %>
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="cths-box <% if $LinkUrl %>cths-with-button<% end_if %> $GetBoxColour($Pos)">
+                    <h4>$Title</h4>
+                    <div>
+                        $Content
+                        <% if $LinkUrl %>
+                            <a class="cths-button" href="$LinkUrl">$LinkText</a>
+                        <% end_if %>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-4 d-flex">
-            <div class="cths-box cths-green">
-                <h4>What are the benefits?</h4>
-                <div>
-                    Tiny Houses are an affordable and flexible option, especially for first home buyers.
-                    They support a minimalist culture and reduce demand on the environment.
-                    They also get around many of the costly consent processes.
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4 d-flex">
-            <div class="cths-box cths-orange">
-                <h4>What does the Society do?</h4>
-                <div>
-                    We host social events and learning workshops to engage the community and share knowledge.
-                    We also actively share and maintain info via <a href="/knowledgebase" title="tiny house helpful information">this website</a> and the <a href="https://www.facebook.com/groups/christchurchtinyhousecommunity/" title="Christchurch tiny house facebook">Facebook group</a>.
-                </div>
-            </div>
-        </div>
+        <% end_loop %>
     </div>
     <div class="row cths-featured-article my-5 p-5">
         <div class="col">
@@ -62,36 +47,25 @@
             </div>
         </div>
     </div>
-    <div class="row mb-5">
-        <div class="col-md-6 col-lg-4 d-flex">
-            <div class="cths-box cths-with-button cths-light-blue">
-                <h4>Want to build your own?</h4>
-                <div>
-                    Our knowledgebase is filled with everything you need to know to get started.
-                    <a class="cths-button" href="/knowledgebase" title="View the knowledgebase">Read more</a>
+    <% if $GetActionBoxes.Count() > 3 %>
+        <div class="row mb-5">
+            <% loop $GetActionBoxes.limit(99, 3) %>
+                <div class="col-md-6 col-lg-4 d-flex">
+                    <div class="cths-box <% if $LinkUrl %>cths-with-button<% end_if %> $GetBoxColour($Pos)">
+                        <h4>$Title</h4>
+                        <div>
+                            $Content
+                            <% if $LinkUrl %>
+                                <a class="cths-button" href="$LinkUrl">$LinkText</a>
+                            <% end_if %>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            <% end_loop %>
         </div>
-        <div class="col-md-6 col-lg-4 d-flex">
-            <div class="cths-box cths-with-button cths-green">
-                <h4>Workshop - 13th Sept</h4>
-                <div>
-                    We're hosting a workshop on how tiny houses fit into the Legislation, with CCC providing staff to help.
-                    <a class="cths-button" href="https://www.facebook.com/events/2135302476710335/" title="View the event on Facebook">Event details</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 col-lg-4 d-flex">
-            <div class="cths-box cths-with-button cths-orange">
-                <h4>Have unanswered questions or want to contribute?</h4>
-                <div>
-                    <a class="cths-button" href="/contact" title="Contact us">Contact us</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <% end_if %>
     <div class="row cths-highlight-row my-5 p-5" id="mc_embed_signup">
-        <form action="https://cths.us19.list-manage.com/subscribe/post?u=3840abcef10697e0a2630eb8f&amp;id=3df62861ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col" target="_blank" novalidate>
+        <form action="https://cths.us19.list-manage.com/subscribe/post?u=3840abcef10697e0a2630eb8f&amp;id=e5dead8af0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col" target="_blank" novalidate>
         <%-- <div id="mc_embed_signup_scroll"> --%>
             <div class="row">
                 <div class="col">
@@ -122,7 +96,7 @@
                         </div>
                         <div class="col-md-6 d-flex mt-auto">
                             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3840abcef10697e0a2630eb8f_3df62861ee" tabindex="-1" value=""></div>
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3840abcef10697e0a2630eb8f_e5dead8af0" tabindex="-1" value=""></div>
                             <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button cths-button ml-auto" title="Subscribe to our email list">
                         </div>
                     </div>

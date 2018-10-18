@@ -26,7 +26,6 @@ class ContactPageController extends PageController
         ]);
         $required = new Forms\RequiredFields(['Email', 'Message']);
         $form = Forms\Form::create($this, 'contact', $fields, $actions);
-        $form->addExtraClass('cths-highlight-row p-5 my-5');
         return $form;
     }
 

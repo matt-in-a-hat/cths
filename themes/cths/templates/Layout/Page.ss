@@ -1,18 +1,20 @@
-<div class="row mt-5">
+<div class="row mt-5 $ClassName">
     <div class="col-md-8">
         <h1>$Title</h1>
         <div class="content mt-3">$Content</div>
     </div>
-    <div class="col-md-4 mt-5">
+    <div class="col-md-4 mt-md-5">
         <% include SideBar %>
-        <% if $Content %>
+        <% if $Content && $ID > 0 %>
             <% include EmailListSidebar %>
         <% end_if %>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-8">
-        $Form
-        $CommentsForm
+<% if $Form || $CommentsForm %>
+    <div class="row cths-highlight-row p-5 my-5">
+        <div class="col-md-8">
+            $Form
+            $CommentsForm
+        </div>
     </div>
-</div>
+<% end_if %>
