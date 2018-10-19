@@ -3,10 +3,13 @@
 use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Assets\Image;
 use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
 
 class Page extends SiteTree
 {
-    private static $db = [];
+    private static $db = [
+        'SummaryBlock' => 'HTMLText',
+    ];
 
     private static $has_one = [
         'HeaderImage' => Image::class,
@@ -17,12 +20,16 @@ class Page extends SiteTree
     ];
 
     public function getCMSFields() {
-        $this->beforeUpdateCMSFields(function ($fields) {
+        $fields = parent::getCMSFields();
+        if ($this->ClassName !== 'SilverStripe\Blog\Model\BlogPost') {
             $uploadField = UploadField::create('HeaderImage');
             $uploadField->getValidator()->setAllowedExtensions(['jpg', 'jpeg', 'png', 'gif']);
             $fields->insertAfter('Content', $uploadField);
-        });
-
-        return parent::getCMSFields();
+            $summary = HtmlEditorField::create('SummaryBlock');
+            $summary->setRows(5);
+            $summary->setDescription('If no summary is specified the first part of the content will be used (as plain text).');
+            $fields->insertAfter('HeaderImage', $summary);
+        }
+        return $fields;
     }
 }

@@ -27,32 +27,24 @@
                     </div>
                 </div>
                 <div class="row">
-                    <% if $FeaturedPage.HeaderImage || $FeaturedPage.FeaturedImage %>
-                        <div class="col-lg-7">
-                            <% if $FeaturedPage.Summary %>
-                                $FeaturedPage.Summary
-                            <% else_if $GetWordCount($FeaturedPage.Content) < 100 %>
-                                $FeaturedPage.Content
-                            <% else %>
-                                <p>$FeaturedPage.Content.Summary(100)</p>
-                            <% end_if %>
-                        </div>
+                    <div class="<% if $FeaturedPage.FeaturedImage || $FeaturedPage.HeaderImage %>col-lg-7<% else %>col-12<% end_if %>">
+                        <% if $FeaturedPage.Summary %> <%-- BlogPost --%>
+                            $FeaturedPage.Summary
+                        <% else_if $FeaturedPage.SummaryBlock %> <%-- Page --%>
+                            $FeaturedPage.SummaryBlock
+                        <% else_if $GetWordCount($FeaturedPage.Content) < 100 %> <%-- Small amount of content --%>
+                            $FeaturedPage.Content
+                        <% else %> <%-- Otherwise just the start bit as plain text --%>
+                            <p>$FeaturedPage.Content.Summary(100)</p>
+                        <% end_if %>
+                    </div>
+                    <% if $FeaturedPage.FeaturedImage %>
                         <div class="col-lg-5 text-center cths-featured-image">
-                            <% if $FeaturedPage.HeaderImage %>
-                                $FeaturedPage.HeaderImage.FitMax(300, 300)
-                            <% else %>
-                                $FeaturedPage.FeaturedImage.FitMax(300, 300)
-                            <% end_if %>
+                            $FeaturedPage.FeaturedImage.FitMax(300, 300)
                         </div>
-                    <% else %>
-                        <div class="col-12">
-                            <% if $FeaturedPage.Summary %>
-                                $FeaturedPage.Summary
-                            <% else_if $GetWordCount($FeaturedPage.Content) < 100 %>
-                                $FeaturedPage.Content
-                            <% else %>
-                                <p>$FeaturedPage.Content.Summary(100)</p>
-                            <% end_if %>
+                    <% else_if $FeaturedPage.HeaderImage %>
+                        <div class="col-lg-5 text-center cths-featured-image">
+                            $FeaturedPage.HeaderImage.FitMax(300, 300)
                         </div>
                     <% end_if %>
                 </div>
