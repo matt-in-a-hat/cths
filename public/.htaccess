@@ -1,6 +1,6 @@
 AuthType Basic
 AuthName "Site Under Development"
-AuthUserFile "/var/www/public/.htpasswd"
+AuthUserFile "/var/www/.htpasswd"
 Require valid-user
 
 ### SILVERSTRIPE START ###
@@ -57,7 +57,3 @@ ErrorDocument 500 /assets/error-500.html
     RewriteRule .* index.php
 </IfModule>
 ### SILVERSTRIPE END ###
-
-<IfModule mod_php5.c>
-    php_value max_execution_time 50000
-</IfModule>
