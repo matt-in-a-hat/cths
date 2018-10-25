@@ -2,9 +2,11 @@
     <% if $Menu(2) %>
         <nav>
             <% with $Level(1) %>
-                <h3>
-                    $MenuTitle
-                </h3>
+                <h4>
+                    <a href="$Link" class="$LinkingMode" title="Go to the $Title.XML page">
+                        $MenuTitle
+                    </a>
+                </h4>
                 <ul>
                     <% include SideBarMenu %>
                 </ul>

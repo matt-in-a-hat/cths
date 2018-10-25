@@ -1,12 +1,12 @@
 TODO
 
 
-Style base page
 Fix mailchimp reply to etc?
 Hero image for home page, & other pages?, & use style for blog
+Image gallery
+Perhaps blog could also be news? Or do we need a separate news concept?
 
-Fix css for deployment?
-Add GA key
+Fix css for deployment? - using node to compile but don't have node on server, have been using scp :/
 Kill WP site on 000
 Could add a confirmation email on mailchimp signup which links them to the form (with payment info) for if they want to become a society member.
 https://mailchimp.com/help/add-or-remove-a-signup-form-on-your-facebook-page/?_ga=2.225365215.430009687.1536897623-898748327.1536897623

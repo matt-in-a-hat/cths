@@ -25,7 +25,7 @@ class ContactEvent extends DataObject {
     }
 
     public function canView($member = null, $context = array()) {
-        return Permission::check('CMS_ACCESS_CMSMain', 'any', $member);
+        return Permission::check('CMS_ACCESS_ContactEventAdmin', 'any', $member);
     }
 
     public function canEdit($member = null, $context = array()) {

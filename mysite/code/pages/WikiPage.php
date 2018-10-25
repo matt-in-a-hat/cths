@@ -13,6 +13,10 @@ class WikiPage extends Page implements PermissionProvider
     private static $default_child = 'WikiPage';
     private static $allowed_children = ['WikiPage', 'RedirectorPage'];
 
+    private static $defaults = [
+        'ShowChildPageSummary' => 1,
+    ];
+
     public function providePermissions() {
         return [
             'EDIT_KNOWLEDGEBASE' => 'Edit Knowledgebase pages',

@@ -1,7 +1,7 @@
-AuthType Basic
-AuthName "Site Under Development"
-AuthUserFile "/var/www/.htpasswd"
-Require valid-user
+# AuthType Basic
+# AuthName "Site Under Development"
+# AuthUserFile "/var/www/.htpasswd"
+# Require valid-user
 
 ### SILVERSTRIPE START ###
 

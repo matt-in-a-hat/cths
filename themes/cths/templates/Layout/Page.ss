@@ -14,6 +14,20 @@
             <% include EmailListSidebar %>
         <% end_if %>
     </div>
+    <% if $ShowChildPageSummary && $Children %>
+        <div class="col-md-8">
+            <h3>In this section</h3>
+            <div class="row my-5">
+                <% loop $Children %>
+                    <% if $ShowInParentSummary %>
+                        <div class="col-md-6 col-lg-4 d-flex">
+                            <% include SilverStripe\\Blog\\PostSummaryInner %>
+                        </div>
+                    <% end_if %>
+                <% end_loop %>
+            </div>
+        </div>
+    <% end_if %>
 </div>
 <% if $Form || $CommentsForm %>
     <div class="row cths-highlight-row p-5 my-5">

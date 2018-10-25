@@ -15,7 +15,13 @@ class HomePageAction extends DataObject {
 
     private static $searchable_fields = ['Title', 'Content', 'LinkText', 'LinkUrl'];
 
-    private static $summary_fields = ['Title', 'Content.Summary(10)', 'LinkText', 'LinkUrl'];
+    private static $summary_fields = [
+        'SortOrder' => 'Order',
+        'Title' => 'Title',
+        'ContentSummary' => 'Content',
+        'LinkText' => 'Link text',
+        'LinkUrl' => 'URL',
+    ];
 
     private static $default_sort = 'SortOrder';
 
@@ -23,5 +29,13 @@ class HomePageAction extends DataObject {
         return [
             'ID', 'LastEdited', 'Created', 'Title', 'Content', 'LinkText', 'LinkUrl', 'SortOrder',
         ];
+    }
+
+    public function ContentSummary () {
+        return $this->dbObject('Content')->Summary(10);
+    }
+
+    public function extendedCan($methodName, $member, $context = array()) {
+        return Permission::check('CMS_ACCESS_ContentAdmin', 'any', $member);
     }
 }
