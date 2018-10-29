@@ -15,6 +15,8 @@ class ContactEvent extends DataObject {
         'Name', 'Email', 'Message',
     ];
 
+    private static $default_sort = 'Created DESC';
+
     private static $summary_fields = ['ID', 'Name', 'Email', 'Message.Summary'];
 
 
