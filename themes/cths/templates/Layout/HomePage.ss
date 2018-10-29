@@ -75,7 +75,7 @@
     <% end_if %>
     <div class="row cths-highlight-row my-5 p-5" id="mc_embed_signup">
         <form action="https://cths.us19.list-manage.com/subscribe/post?u=3840abcef10697e0a2630eb8f&amp;id=e5dead8af0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col" target="_blank" novalidate>
-        <%-- <div id="mc_embed_signup_scroll"> --%>
+
             <div class="row">
                 <div class="col">
                     <h5>Stay informed about events, meetings and workshops by signing up to our mailing list</h5>
@@ -111,6 +111,13 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row mt-5">
+                <div class="col">
+                    <h5>Alternatively, to get access to all of our events <a href="https://docs.google.com/forms/d/e/1FAIpQLSfakPkV9AqGejRwSFtStiNCHcLK9uBchl-g6g-40JlBPC2mSg/viewform?c=0&w=1" title="Register as a society member" target="_blank">sign up to our society here</a>!</h5>
+                </div>
+            </div>
+
         </form>
     </div>
     <div class="row">
