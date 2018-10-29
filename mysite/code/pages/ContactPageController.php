@@ -46,7 +46,7 @@ class ContactPageController extends PageController
         //     ],
         // ]);
         $recaptcha = new \ReCaptcha\ReCaptcha(Environment::getEnv('GOOGLE_RECAPTCHA_SECRET'));
-        $resp = $recaptcha->setExpectedHostname('localhost')
+        $resp = $recaptcha->setExpectedHostname(Environment::getEnv('CURRENT_DOMAIN'))
                           ->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
         if (!$resp->isSuccess()) {
