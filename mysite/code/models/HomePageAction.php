@@ -11,9 +11,10 @@ class HomePageAction extends DataObject {
         'LinkText' => 'Varchar(55)',
         'LinkUrl' => 'Varchar(255)',
         'SortOrder' => 'Int',
+        'IsActive' => 'Boolean',
     ];
 
-    private static $searchable_fields = ['Title', 'Content', 'LinkText', 'LinkUrl'];
+    private static $searchable_fields = ['Title', 'Content', 'LinkText', 'LinkUrl', 'IsActive'];
 
     private static $summary_fields = [
         'SortOrder' => 'Order',
@@ -21,13 +22,14 @@ class HomePageAction extends DataObject {
         'ContentSummary' => 'Content',
         'LinkText' => 'Link text',
         'LinkUrl' => 'URL',
+        'IsActive' => 'Active',
     ];
 
     private static $default_sort = 'SortOrder';
 
     public function exportFields() {
         return [
-            'ID', 'LastEdited', 'Created', 'Title', 'Content', 'LinkText', 'LinkUrl', 'SortOrder',
+            'ID', 'LastEdited', 'Created', 'Title', 'Content', 'LinkText', 'LinkUrl', 'SortOrder', 'IsActive',
         ];
     }
 

@@ -15,7 +15,7 @@
         <% end_if %>
     </div>
     <% if $ShowChildPageSummary && $Children %>
-        <div class="col-md-8">
+        <div class="col-md-12">
             <h3>In this section</h3>
             <div class="row my-5">
                 <% loop $Children %>

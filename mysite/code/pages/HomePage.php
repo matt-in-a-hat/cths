@@ -13,7 +13,7 @@ class HomePage extends Page
     ];
 
     public function GetActionBoxes() {
-        return HomePageAction::get();
+        return HomePageAction::get()->filter('IsActive', 1);
     }
 
     public function getCMSFields() {
