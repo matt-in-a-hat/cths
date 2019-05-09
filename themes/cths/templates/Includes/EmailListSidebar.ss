@@ -1,5 +1,5 @@
 <div class="row cths-box cths-light-blue my-5 p-3" id="mc_embed_signup">
-    <form action="https://cths.us19.list-manage.com/subscribe/post?u=3840abcef10697e0a2630eb8f&amp;id=3df62861ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col" target="_blank" novalidate>
+    <form action="https://cths.us19.list-manage.com/subscribe/post?u=3840abcef10697e0a2630eb8f&amp;id=e5dead8af0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col" target="_blank" novalidate>
         <div class="row">
             <div class="col">
                 <h5>Stay informed about events, meetings and workshops by signing up to our mailing list</h5>
