@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ site.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+          <a href="{{ post.url | relative_url }}">Read more</a>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+  <h2 class="post-list-heading" id="mc_embed_signup">Stay informed</h2>
+  <p>Sign up to our mailing list to hear about upcoming events, meetings and workshops.</h3>
+  <div>
+    <form action="https://cths.us19.list-manage.com/subscribe/post?u=3840abcef10697e0a2630eb8f&amp;id=e5dead8af0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="cths-subscribe-form" target="_blank" novalidate>
+      <div class="mc-field-group">
+        <label class="cths-mailing-label" for="mce-FNAME">First Name </label>
+        <input type="text" value="" name="FNAME" id="mce-FNAME" />
+      </div>
+      <div class="mc-field-group">
+        <label class="cths-mailing-label" for="mce-LNAME">Last Name </label>
+        <input type="text" value="" name="LNAME" id="mce-LNAME" />
+      </div>
+      <div class="mc-field-group">
+        <label class="cths-mailing-label" for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required="required" />
+      </div>
+      <div id="mce-responses">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+          name="b_3840abcef10697e0a2630eb8f_e5dead8af0" tabindex="-1" value=""></div>
+      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+        class="cths-subscribe-button" title="Subscribe to our email list" />
+    </form>
+  </div>
+
+  <p>Alternatively, to get access to all of our events <a href="https://docs.google.com/forms/d/e/1FAIpQLSfakPkV9AqGejRwSFtStiNCHcLK9uBchl-g6g-40JlBPC2mSg/viewform?c=0&w=1" title="Register as a society member" target="_blank">sign up to our society here</a>!</p>
+</div>
