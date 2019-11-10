@@ -3,8 +3,13 @@ layout: default
 ---
 
 <div class="home">
-
-  {{ content }}
+  <div class="cths-home-images">
+    <img class="cths-banner-image" src="/assets/images/kyles-house.jpg" alt="Example tiny house" />
+    <img class="cths-banner-image" src="/assets/images/cths-banner.jpg" alt="CTHS Facebook banner" />
+  </div>
+  <div class="cths-home-content">
+    {{ content }}
+  </div>
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ site.list_title | default: "Posts" }}</h2>

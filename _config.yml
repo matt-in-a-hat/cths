@@ -22,6 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cths.nz" # the base hostname & protocol for your site, e.g. http://example.com
 show_excerpts: true
 list_title: "News"
+google_analytics: "UA-125675640-1"
 
 # Build settings
 markdown: kramdown
