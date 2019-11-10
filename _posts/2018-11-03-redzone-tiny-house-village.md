@@ -3,9 +3,10 @@ layout: post
 title:  "A tiny house village in Christchurch’s red zone"
 date:   2018-11-03 22:56:53 +1300
 ---
-![Village sketch](/assets/images/thv-sketch.jpg)
 
 We’re working with Regen Chch and CCC to propose a small village of tiny houses.
+
+![Village sketch](/assets/images/thv-sketch.jpg)
 
 This would allow us to showcase a sustainable urban community while utilising land not fit for traditional builds. Our proposal aims to
 
