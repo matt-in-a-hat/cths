@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Canterbury Tiny House Society"
 layout: home
 ---
 ## What is a Tiny House?

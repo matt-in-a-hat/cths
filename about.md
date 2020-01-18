@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+menu_title: About
 ---
 We are a group of Cantabrians with a common interest in tiny houses and the tiny house movement. While the [Facebook group](https://www.facebook.com/groups/christchurchtinyhousecommunity/about/) has been around for many years, this not-for-profit society was established in about 2017. We hold public events in the form of social picnics, workshops, and presentations, to meet our general aims of:
 
