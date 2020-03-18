@@ -23,7 +23,7 @@ The Village itself will comprise of the communities' own tiny houses which they 
 
 ## Status
 
-The Village is still in the planning phase, with negotiations under way with LINZ, CCC and other partners. If you're interested in keeping up with the latest news and events, [subscribe to our news letter](https://cths.us19.list-manage.com/subscribe/post?u=3840abcef10697e0a2630eb8f&id=e5dead8af0). If you align with our Vision below, and would like to join the village or are able to provide some help (e.g. with any of the infrastructure install or community engagement), please [get in touch](https://forms.gle/iTKXEWcHPVdQCxxA7).
+The Village is still in the planning phase, with negotiations under way with LINZ, CCC and other partners. If you’re interested in keeping up with the latest news and events, please [get in touch](https://docs.google.com/forms/d/e/1FAIpQLSenvvZvX1UltQDRBTVayOeYfnEymsLGI2ucBxIxkTP5Ocb5kg/viewform?usp=sf_link) and we will add you to the Village mailing list. Similarly if you align with our Vision below, and would like to join the Village or are able to provide some help (e.g. with any of the infrastructure install or community engagement), please [get in touch](https://docs.google.com/forms/d/e/1FAIpQLSenvvZvX1UltQDRBTVayOeYfnEymsLGI2ucBxIxkTP5Ocb5kg/viewform?usp=sf_link) so we can connect you with our team.
 
 ## Village Community Vision
 
