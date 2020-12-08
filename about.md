@@ -14,6 +14,16 @@ We are a group of Cantabrians with a common interest in tiny houses and the tiny
 For more information on what we’re doing [sign up to our mailing list](https://cths.us19.list-manage.com/subscribe/post?u=3840abcef10697e0a2630eb8f&id=e5dead8af0), and join our discussions in the [Facebook group](https://www.facebook.com/groups/christchurchtinyhousecommunity/).
 
 <br>
+<h3>Committee members for 2020-21</h3>
+
+* Chair: Kyle Sutherland
+* Treasurer: Allie Clover
+* Secretary: Jacqui Barnes
+* Online Coordinator: Matt Lang
+* Council Liaison: Simon Corskie
+* Social Leader: Meredith Leutzinger
+
+<br>
 <h3>Committee members for 2019-20</h3>
 
 * Chair: Kyle Sutherland
