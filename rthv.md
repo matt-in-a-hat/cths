@@ -23,7 +23,7 @@ The Village itself will comprise of the communities' own tiny houses which they 
 
 ## Status
 
-The Village is currently well into the planning phase. Earlier in 2023 we obtained a lease for our preferred site to allow futher investigation, and as of June we're organising site-specific plans of how the village will look and what infrastructure is required. We're also now engaging the immediate community, and consulting with a range of stakeholders to apply for the full lease from CCC and to apply for funding to help with the initial infrastructure.
+The Village is currently well into the planning phase. Earlier in 2023 we obtained a licence to allow futher investigation at our preferred site, and as of June we're organising site-specific plans of how the village will look and what infrastructure is required. We're also now engaging the immediate community, and consulting with a range of stakeholders to apply for the full lease from CCC and to apply for funding to help with the initial infrastructure.
 
 If you are interested and able to provide any support (e.g. with any of the infrastructure install or community engagement), please [get in touch](https://docs.google.com/forms/d/e/1FAIpQLSenvvZvX1UltQDRBTVayOeYfnEymsLGI2ucBxIxkTP5Ocb5kg/viewform?usp=sf_link). If would be keen to join the Village with your own tiny house, and you align with our Vision below, let us know!
 
