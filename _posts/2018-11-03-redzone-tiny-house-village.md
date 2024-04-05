@@ -6,7 +6,9 @@ date:   2018-11-03 22:56:53 +1300
 
 We’re working with Regen Chch and CCC to propose a small village of tiny houses.
 
+
 > [Update: Read the latest state of this village proposal here](/rthv)
+
 
 ![Village sketch](/assets/images/thv-sketch.jpg)
 

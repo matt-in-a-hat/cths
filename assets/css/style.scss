@@ -1,12 +1,25 @@
 ---
 ---
 
-
+.site-header {
+  position: relative;
+}
 .site-logo {
-  float: left;
+  padding: 10px;
+  display: block;
 }
 .site-nav {
-  margin-top: 20px;
+  z-index: 5;
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+  float: unset;
+}
+@media screen and (max-width: 600px) {
+  .site-nav {
+    bottom: unset;
+    top: 30px;
+  }
 }
 .site-title {
   margin-top: 20px;
