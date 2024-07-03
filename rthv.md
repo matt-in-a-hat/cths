@@ -42,25 +42,25 @@ Our intentional community of tiny houses on wheels strives to cultivate a balanc
 
 
 
-FAQ
+## FAQ
 
-What is a Tiny House on Wheels (THoW)?
+**What is a Tiny House on Wheels (THoW)?**
 
 Small towable dwellings of the "Tiny Houses on Wheels" movement aesthetic. They are purpose-built to allow one or more persons to live in - including kitchen, bathroom and sleeping facilities, constructed as a road-warranted trailer.
 
-Can I rent or buy a house in the village?
+**Can I rent or buy a house in the village?**
 
 No - the village will comprise of people bringing their own THoW's. The aim of this project isn't to be just another housing provider, but to create a legitimate (council recognised) platform for tiny houses to be a viable housing option. As a small community group we don't have the capital nor the desire to "own" the whole village and rent houses out as a landlord would, we want the community members to be equal parts of the village, to have personal autonomy while also contributing to the village and wider community. There are many people who already own, or are looking to build or buy, a THoW - we're providing a community they can join. There will be a weekly rent to cover costs including the land lease cost and infrastructure maintenance.
 
-Will this be an exclusive community?
+**Will this be an exclusive community?**
 
 No - our intention is to nurture a diverse and inclusive community. Anyone can apply, but as this will be an intentional community, and also a pioneering project on council-leased land, we need to be mindful who joins. In particular they must align with our community values, and they must already have their own THoW that meets the safety standards. Our application process will consider the diversity of the whole village and allow priority to applicants of disadvantaged groups in attempt to counter existing systemic imbalances. We're aware there's already a large setback in our inclusivity - namely that we're restricting to those who can already afford to own/build a THoW, but we'll do our best with that in consideration, and hopefully in the future we'll be able to provide some support for those limited by that initial step too.
 
-How long could I stay?
+**How long could I stay?**
 
 Our lease with council will be for an initial 10 years. All going well the hope is that this can be extended in the future. Individuals are not locked into a fixed term, and can leave the village as needs be (though there may be a short notice period, to be determined within the rental contract).
 
-How will the village be governed?
+**How will the village be governed?**
 
 The village will be run by the village members as a sociocracy, comprising overlapping working groups who manage various aspects of village life. A core committee, elected within the members, will handle any policies or wider-reaching decisions, or any issues not easily reaching consensus. The official society that owns the village lease will comprise of that core committee, and a few select outside stakeholders.
 
