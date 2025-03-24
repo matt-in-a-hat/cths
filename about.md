@@ -6,6 +6,11 @@ menu_title: About
 ---
 
 The official society was dissolved in 2021 due to lack of interest organising events etc. Other some updates from the small group working on the village proposal, this site is no longer being updated. Join the [Facebook group](https://www.facebook.com/groups/christchurchtinyhousecommunity/) for a larger community of tiny house enthusiasts.
+
+<br>
+<br>
+<hr>
+<br>
 <br>
 
 We are a group of Cantabrians with a common interest in tiny houses and the tiny house movement. While the [Facebook group](https://www.facebook.com/groups/christchurchtinyhousecommunity/about/) has been around for many years, this not-for-profit society was established in about 2017. We hold public events in the form of social picnics, workshops, and presentations, to meet our general aims of:
