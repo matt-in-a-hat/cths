@@ -1,24 +1,29 @@
-<header class="site-header">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
+  <input type="checkbox" id="nav-trigger" class="peer hidden" />
 
-    <div class="wrapper">
-        <a class="site-logo" href="{{ "/" | relative_url }}"><img src="/assets/images/cths-logo.png" width="121px" alt="Canterbury Tiny House Society" /></a>
+  <div class="wrapper max-w-5xl mx-auto px-4 flex items-center justify-between h-14">
+    <a href="{{ "/" | relative_url }}" class="font-semibold text-gray-900 visited:text-gray-900 tracking-tight whitespace-nowrap">
+      Riverlution Tiny House Village
+    </a>
 
-        <nav class="site-nav">
-            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-            <label for="nav-trigger">
-                <span class="menu-icon">
-                    <svg viewBox="0 0 18 15" width="18px" height="15px">
-                        <path
-                            d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z" />
-                    </svg>
-                </span>
-            </label>
+    <nav class="hidden md:flex items-center gap-6">
+      {%- for item in site.data.navigation -%}
+        <a class="text-sm text-gray-700 visited:text-gray-700 hover:text-gray-900" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {%- endfor -%}
+      <a class="text-sm font-medium px-3 py-1.5 rounded-full bg-emerald-700 text-white visited:text-white hover:text-white hover:bg-emerald-800" href="https://forms.gle/6v43PrYjfSCB77736">Get in touch</a>
+    </nav>
 
-            <div class="trigger">
-                <a class="page-link" href="/rthv">Tiny House Village</a>
-                <a class="page-link" href="/about">About CTHS</a>
-                <a class="page-link" href="https://forms.gle/6v43PrYjfSCB77736">Contact</a>
-            </div>
-        </nav>
-    </div>
+    <label for="nav-trigger" class="md:hidden cursor-pointer p-2 -mr-2">
+      <svg viewBox="0 0 18 15" width="20" height="17" fill="currentColor">
+        <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z" />
+      </svg>
+    </label>
+  </div>
+
+  <nav class="hidden peer-checked:flex md:hidden flex-col border-t border-gray-200 bg-white px-4 py-2">
+    {%- for item in site.data.navigation -%}
+      <a class="py-2 text-sm text-gray-700 visited:text-gray-700" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    {%- endfor -%}
+    <a class="py-2 text-sm font-medium text-emerald-700 visited:text-emerald-700 hover:text-emerald-700" href="https://forms.gle/6v43PrYjfSCB77736">Get in touch</a>
+  </nav>
 </header>

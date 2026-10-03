@@ -1,53 +1,12 @@
 ---
 ---
 
-.site-header .wrapper {
-  position: relative;
-}
-.site-logo {
-  padding: 10px;
-  display: inline-block;
-}
-.site-nav {
-  z-index: 5;
-  position: absolute;
-  right: 15px;
-  bottom: 5px;
-  float: unset;
-}
-@media screen and (max-width: 600px) {
-  .site-nav {
-    bottom: unset;
-    top: 30px;
-  }
-}
-.site-title {
-  margin-top: 20px;
-  margin-left: 20px;
+.page-content {
+  background-color: #fafaf9;
 }
 
-.cths-mailing-label {
-  min-width: 125px;
-  display: inline-block;
-}
-.cths-subscribe-button {
-  margin-left: 190px;
-}
-.cths-subscribe-form {
-  margin: 15px;
-  border: solid 1px #ddd;
-  padding: 15px;
-  display: inline-block;
-  border-radius: 5px;
-  margin-bottom: 25px;
-  background-color: #fff;
-}
-.home {
-  position: relative;
-}
-.cths-banner-image {
-  margin: 40px 10px 40px 0;
-}
-.page-content {
-  background-color: #f5f5f5;
+// A slightly darker green on visited for in-content links, instead of
+// minima's default blue/navy a:visited colour.
+.prose a:visited {
+  color: #065f46;
 }

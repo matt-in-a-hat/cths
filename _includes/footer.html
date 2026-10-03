@@ -1,20 +1,13 @@
-<footer class="site-footer h-card">
+<footer class="site-footer h-card border-t border-gray-200">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-  <div class="wrapper">
+  <div class="wrapper max-w-5xl mx-auto px-4 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-sm text-gray-500">
+    <p>© {{ "now" | date: "%Y" }} {{ site.title | escape }}</p>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col one-half">
-        <h2 class="footer-heading">© 2020, {{ site.title | escape }}</h2>
-      </div>
-
-      <img src="/assets/images/cths-logo.png" width="121px" alt="CTHS logo" style="float: right" />
-
-      <div class="social-links">
-        {%- include social.html -%}
-      </div>
+    <div class="social-links">
+      {%- include social.html -%}
     </div>
 
+    <a class="visited:text-gray-500 hover:text-gray-700" href="{{ "/canterbury-tiny-house-society/" | relative_url }}">Canterbury Tiny House Society</a>
   </div>
-
 </footer>

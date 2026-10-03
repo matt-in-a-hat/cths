@@ -1,37 +1,24 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">
-  <h1>Canterbury Tiny House Society</h1>
-  <img class="cths-banner-image" src="/assets/images/cths-banner.jpg" alt="CTHS Facebook banner" />
-  <div class="cths-home-content">
-    {{ content }}
-  </div>
-  <img class="cths-banner-image" src="/assets/images/kyles-house.jpg" alt="Example tiny house" />
+{%- include head.html -%}
 
-  <br>
-  <br>
+<body>
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ site.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-          <a href="{{ post.url | relative_url }}">Read more</a>
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
+    {%- include header.html -%}
 
-</div>
+    <main aria-label="Content">
+        <div class="max-w-4xl mx-auto px-4 pt-8">
+            <img class="w-full h-auto rounded-lg shadow-sm" src="/assets/images/thv-sketch.jpg" alt="Sketch of the proposed Riverlution Tiny House Village" />
+        </div>
+
+        <div class="wrapper max-w-3xl mx-auto px-4 py-10 prose prose-emerald">
+            {{ content }}
+        </div>
+    </main>
+
+    {%- include footer.html -%}
+
+</body>
+
+</html>
