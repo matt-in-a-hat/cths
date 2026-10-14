@@ -30,13 +30,14 @@ Extensive planning, stakeholder engagement, governance development, site investi
 
 **Progress to date**
 
-- ✅ Incorporated Society established
-- ✅ Governance and operational frameworks completed
-- ✅ Site investigations undertaken with Council approval
-- ✅ Community consultation and stakeholder engagement completed
-- ✅ Village concept and site design prepared with professional support
-- ✅ Partnerships established with local organisations and experts
-- ⏳ Preparing formal lease application process
+- ✅&nbsp;&nbsp;Incorporated Society established
+- ✅&nbsp;&nbsp;Governance and operational frameworks completed
+- ✅&nbsp;&nbsp;Site investigations undertaken with Council approval
+- ✅&nbsp;&nbsp;Community consultation and stakeholder engagement completed
+- ✅&nbsp;&nbsp;Village concept and site design prepared with professional support
+- ✅&nbsp;&nbsp;Partnerships established with local organisations and experts
+- ⏳&nbsp;&nbsp;Preparing formal lease application process
+{: .no-bullets }
 
 Riverlution Tiny House Village is a community effort. By contributing your skills, resources, knowledge, or enthusiasm, you're helping demonstrate a hopeful and practical model for affordable, sustainable living in Ōtautahi.
 

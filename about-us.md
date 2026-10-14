@@ -27,16 +27,16 @@ Riverlution Tiny House Village is a volunteer-led Incorporated Society bringing 
     </div>
   </div>
   <div class="flex gap-4 items-start">
-    <div class="w-20 h-20 rounded-full bg-gray-100 flex-none"></div>
+    <img src="/assets/images/regina.jpeg" alt="Regina Speer" class="w-20 h-20 rounded-full object-cover flex-none" />
     <div>
-      <p class="font-semibold text-gray-900">Claire</p>
-      <p class="text-sm text-gray-500 italic">Bio coming soon.</p>
+      <p class="font-semibold text-gray-900">Regina Speer</p>
+      <p class="text-sm text-gray-500 italic">Regina is a communication designer for purpose-driven businesses. She designed her tiny house on wheels in 2022 and built it with the help of her community. She’s been living in it for over three years now and loves the low impact lifestyle.</p>
     </div>
   </div>
   <div class="flex gap-4 items-start">
     <div class="w-20 h-20 rounded-full bg-gray-100 flex-none"></div>
     <div>
-      <p class="font-semibold text-gray-900">Regina</p>
+      <p class="font-semibold text-gray-900">Claire</p>
       <p class="text-sm text-gray-500 italic">Bio coming soon.</p>
     </div>
   </div>
