@@ -47,11 +47,13 @@ Riverlution Tiny House Village is a volunteer-led Incorporated Society bringing 
       <p class="text-sm text-gray-500 italic">Bio coming soon.</p>
     </div>
   </div>
-  <div class="flex gap-4 items-start">
-    <div class="w-20 h-20 rounded-full bg-gray-100 flex-none"></div>
+  <div class="flex gap-4 items-start sm:col-span-2">
+    <img src="/assets/images/hayley.jpg" alt="Hayley Guglietta" class="w-20 h-20 rounded-full object-cover flex-none" />
     <div>
-      <p class="font-semibold text-gray-900">Hayley</p>
-      <p class="text-sm text-gray-500 italic">Bio coming soon.</p>
+      <p class="font-semibold text-gray-900">Hayley Guglietta &mdash; Advisor</p>
+      <p class="text-sm text-gray-500 italic">Hayley is a community development and environmental advocate with extensive experience in community-led projects, governance and building partnerships across Christchurch.</p>
+      <p class="text-sm text-gray-500 italic mt-2">She is the Manager of the Avon-Ōtākaro Network and has been involved in a wide range of initiatives focused on environmental restoration, community resilience and creating more connected neighbourhoods. She has also played a key role in projects including the Richmond Community Garden, Riverlution and Ōtākaro Orchard.</p>
+      <p class="text-sm text-gray-500 italic mt-2">Through the Avon-Ōtākaro Network, Hayley has supported innovative approaches to housing, including the development of the Riverlution Tiny House Village. She brings a practical, strategic perspective and a strong belief in community-led solutions that create positive social, environmental and housing outcomes.</p>
     </div>
   </div>
 </div>
